@@ -4,7 +4,7 @@
 1. [Project Overview](#-project-overview)
 2. [Tech Stack](#-tech-stack)
 3. [Data Description](#-data-description)
-4. [Model Performance](#-model-performance:-ANN)
+4. [Model Performance](#-model-performance)
 5. [Contributors](#-contributors)
 6. [References](#-references)
 7. [How to Use](#-how-to-use)
@@ -69,7 +69,7 @@ The 462 output variables capture the indoor environmental quality, specifically:
 
 ---
 
-## 🧠 Model Performance: ANN
+## 🧠 Model Performance
 
 The table below summarizes the performance of the Artificial Neural Network (ANN) model on both the training and testing datasets, as well as the detailed performance for each variable (velocity, temperature, and relative humidity).
 
