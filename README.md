@@ -29,6 +29,24 @@ This project utilizes the following technologies and tools:
 
 ---
 
+## 👥 Contributors
+This project was developed by:
+- **Dr. Ir. Faridah, ST., MSc., IPU** 🧑‍🏫 – Project Lead and Senior Researcher
+- **Athallah Naufal Hadi, ST.** 🧑‍🏫 – Assistant Researcher
+
+Feel free to reach out via email for collaboration or inquiries!
+
+---
+
+## 📚 References
+Below are some key references and resources used during the development of this project:
+- **Faridah, F. et al.** *An Indoor Airflow Distribution Predictor Using Machine Learning for a Real-Time Healthy Building Monitoring System in the Tropics*. Building Services Engineering Research and Technology, 2024.
+  [DOI](https://doi.org/10.1177/01436244241231354) 
+- PyTorch Documentation: https://pytorch.org/
+- Scikit-learn Documentation: https://scikit-learn.org/
+
+---
+
 ## 📊 Data Description
 
 ### 🔑 Input Variables:
@@ -50,23 +68,81 @@ The 462 output variables capture the indoor environmental quality, specifically:
 
 ---
 
-## 👥 Contributors
-This project was developed by:
-- **Dr. Ir. Faridah, ST., MSc., IPU** 🧑‍🏫 – Project Lead and Senior Researcher
-- **Athallah Naufal Hadi, ST.** 🧑‍🏫 – Assistant Researcher
+## 🧠 Model Performance: ANN
 
-Feel free to reach out via email for collaboration or inquiries!
+The table below summarizes the performance of the Artificial Neural Network (ANN) model on both the training and testing datasets, as well as the detailed performance for each variable (velocity, temperature, and relative humidity).
 
----
+### Training vs Testing Results
 
-## 📚 References
-Below are some key references and resources used during the development of this project:
-- **Faridah, F. et al.** *An Indoor Airflow Distribution Predictor Using Machine Learning for a Real-Time Healthy Building Monitoring System in the Tropics*. Building Services Engineering Research and Technology, 2024.
-  [DOI](https://doi.org/10.1177/01436244241231354) 
-- PyTorch Documentation: https://pytorch.org/
-- Scikit-learn Documentation: https://scikit-learn.org/
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Training</th>
+      <th>Testing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>R²</strong></td>
+      <td>0.955403</td>
+      <td>0.862252</td>
+    </tr>
+    <tr>
+      <td><strong>MSE</strong></td>
+      <td>0.00189887</td>
+      <td>0.00556519</td>
+    </tr>
+    <tr>
+      <td><strong>MAE</strong></td>
+      <td>0.0286858</td>
+      <td>0.0414909</td>
+    </tr>
+  </tbody>
+</table>
 
----
+### Detailed Performance by Variable (Velocity, Temperature, Relative Humidity)
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>R²</th>
+      <th>MSE</th>
+      <th>MAE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Velocity (v)</strong></td>
+      <td>0.86823</td>
+      <td>0.00869</td>
+      <td>0.05261</td>
+    </tr>
+    <tr>
+      <td><strong>Temperature (T)</strong></td>
+      <td>0.85106</td>
+      <td>0.00642</td>
+      <td>0.02689</td>
+    </tr>
+    <tr>
+      <td><strong>Relative Humidity (RH)</strong></td>
+      <td>0.95339</td>
+      <td>0.00157</td>
+      <td>0.04496</td>
+    </tr>
+  </tbody>
+</table>
+
+The ANN model shows high performance across all variables, particularly for **relative humidity** where it achieves an R² of 0.95339 on the testing data, making it well-suited for predicting indoor environmental conditions in the healthy building monitoring system.
+
+### 📉 Training and Validation Loss
+
+The graph below shows the training and validation loss over epochs for the ANN model. This indicates how well the model converged during training and how it performed on the validation dataset.
+
+![Training and Validation Loss](Gambar/Loss Epoch.png)
+
+From the graph, we can see that the loss decreases rapidly during the early epochs and stabilizes as the model continues to train, with both the training and validation loss remaining low, indicating a good fit without overfitting.
 
 ## 🛠️ How to Use
 
