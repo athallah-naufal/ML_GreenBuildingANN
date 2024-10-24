@@ -153,13 +153,6 @@ First, clone the repository to your local machine using the following command:
 git clone https://github.com/username/indoor-airflow-predictor.git
 cd indoor-airflow-predictor
 ```
-### 1. Clone the Repository
-First, clone the repository to your local machine using the following command:
-
-```bash
-git clone https://github.com/username/indoor-airflow-predictor.git
-cd indoor-airflow-predictor
-```
 ### 2. Install Dependencies
 Ensure you have all necessary libraries installed by running:
 
