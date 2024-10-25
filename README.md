@@ -4,10 +4,11 @@
 1. [Project Overview](#-project-overview)
 2. [Tech Stack](#-tech-stack)
 3. [Data Description](#-data-description)
-4. [Contributors](#-contributors)
-5. [References](#-references)
-6. [How to Use](#-how-to-use)
-7. [Getting Started](#-getting-started)
+4. [Model Performance](#-model-performance)
+5. [Contributors](#-contributors)
+6. [References](#-references)
+7. [How to Use](#-how-to-use)
+8. [Getting Started](#-getting-started)
 
 ---
 
@@ -68,7 +69,7 @@ The 462 output variables capture the indoor environmental quality, specifically:
 
 ---
 
-## 🧠 Model Performance: ANN
+## 🧠 Model Performance
 
 The table below summarizes the performance of the Artificial Neural Network (ANN) model on both the training and testing datasets, as well as the detailed performance for each variable (velocity, temperature, and relative humidity).
 
@@ -126,7 +127,8 @@ The table below summarizes the performance of the Artificial Neural Network (ANN
       <td>0.02689</td>
     </tr>
     <tr>
-      <td><strong>Relative Humidity (RH)</strong></td>
+      <td><strong>Relative Humidity (RH)</strong
+></td>
       <td>0.95339</td>
       <td>0.00157</td>
       <td>0.04496</td>
@@ -134,25 +136,16 @@ The table below summarizes the performance of the Artificial Neural Network (ANN
   </tbody>
 </table>
 
-The ANN model shows high performance across all variables, particularly for **relative humidity** where it achieves an R² of 0.95339 on the testing data, making it well-suited for predicting indoor environmental conditions in the healthy building monitoring system.
-
 ### 📉 Training and Validation Loss
 
 The graph below shows the training and validation loss over epochs for the ANN model. This indicates how well the model converged during training and how it performed on the validation dataset.
 
-![Training and Validation Loss](Gambar/Loss Epoch.png)
+![Loss Epoch](https://github.com/user-attachments/assets/fab9cfa8-0ab3-46db-86fc-265e1fdbb06c)
 
 From the graph, we can see that the loss decreases rapidly during the early epochs and stabilizes as the model continues to train, with both the training and validation loss remaining low, indicating a good fit without overfitting.
 
 ## 🛠️ How to Use
 
-### 1. Clone the Repository
-First, clone the repository to your local machine using the following command:
-
-```bash
-git clone https://github.com/username/indoor-airflow-predictor.git
-cd indoor-airflow-predictor
-```
 ### 1. Clone the Repository
 First, clone the repository to your local machine using the following command:
 
