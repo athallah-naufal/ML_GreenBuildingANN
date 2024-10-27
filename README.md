@@ -150,8 +150,8 @@ From the graph, we can see that the loss decreases rapidly during the early epoc
 First, clone the repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/username/indoor-airflow-predictor.git
-cd indoor-airflow-predictor
+git clone https://github.com/athallah-naufal/ML_GreenBuildingANN.git
+cd ML_GreenBuildingANN
 ```
 ### 2. Install Dependencies
 Ensure you have all necessary libraries installed by running:
@@ -163,7 +163,7 @@ pip install -r requirements.txt
 Start Jupyter Notebook and open the .ipynb file:
 
 ```bash
-jupyter notebook
+jupyter notebook ML_GreenBuildingANN.ipynb
 ```
 
 
